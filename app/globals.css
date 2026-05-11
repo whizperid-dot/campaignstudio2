@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Visa Brand Color System */
+:root {
+  --visa-blue: #1434cb;
+  --visa-blue-dark: #0e2490;
+  --visa-blue-light: #1a3fe0;
+  --visa-gold: #f7b600;
+  --visa-gold-dark: #c99200;
+  --bg-primary: #f8f9fc;
+  --bg-dark: #07143a;
+  --bg-navy: #0a1c54;
+  --surface: #ffffff;
+  --surface-alt: #f0f3fb;
+  --border: #dde3f5;
+  --text-primary: #07143a;
+  --text-secondary: #4a5578;
+  --text-muted: #8894b4;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Neue Haas Grotesk', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(20, 52, 203, 0.2);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(20, 52, 203, 0.35);
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #1434cb;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  background: rgba(20, 52, 203, 0.12);
+  border-radius: 4px;
+  height: 4px;
+}
+input[type="range"]:focus {
+  outline: none;
+}
